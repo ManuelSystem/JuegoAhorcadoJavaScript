@@ -1,0 +1,54 @@
+<!-- Documento HTML ---juego Ahorcado
+--Realizado por LUIS MANUEL JAIMES SILVA - 16132045--
+--Asignatura : Electiva 3--
+Fecha terminado: 07/03/2020;
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Juego de ahorcado</title>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+      <div class="main-container">
+
+        <h1 class="titulo">Juego del ahorcado con HTML, CSS Y JavaScript</h1>
+        <br>
+        <h1 id="msg-final"></h1>
+        <h3 id="acierto"></h3>
+        <div class="flex-row no-wrap">
+          <h2 class="palabra" id="palabra"></h2>
+
+          <picture>
+           <img src="img/ahorcado-6.png" alt="" id="image6">
+            <img src="img/ahorcado-5.png" alt="" id="image5">
+            <img src="img/ahorcado-4.png" alt="" id="image4">
+            <img src="img/ahorcado-3.png" alt="" id="image3">
+            <img src="img/ahorcado-2.png" alt="" id="image2">
+            <img src="img/ahorcado-1.png" alt="" id="image1">
+            <img src="img/ahorcado-0-0.png" alt="" id="image0">
+          </picture>
+        </div>
+        <div class="flex-row" id="turnos">
+          <div class="col"><br>
+            <h3>Intentos restantes: <span id="intentos">6</span></h3>
+          </div>
+          <div class="col">
+            <button onclick="inicio()" id="reset">Elegir otra palabra</button>
+            <button onclick="pista()" id="pista">Dame una pista!</button>
+          </div>
+          </div>
+        
+        <div class="flex-row">
+          <div class="abecedario">
+            <div class="flex-row" id="abcdario">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    <script src="js/funciones.js"></script>
+  </body>
+</html>

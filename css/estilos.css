@@ -1,0 +1,146 @@
+/* Documento CSS ---juego Ahorcado
+--Realizado por LUIS MANUEL JAIMES SILVA - 16132045--
+--Asignatura : Electiva 3--
+Fecha terminado: 07/03/2020;
+*/
+
+* {
+  box-sizing: border-box;
+}
+body{
+background: #F7F8F8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #ACBB78, #F7F8F8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.main-container {
+  max-width: 800px;
+  margin: auto;
+}
+h1.titulo {
+  margin: 50px auto 80px auto;
+  text-align: center;
+  color: #9E845A;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+h1#msg-final {
+  text-align: center;
+  color: crimson;
+  transition: all .5s ease;
+  transform: scale(0);
+  min-height: 50px;
+  margin-bottom: 0;
+}
+.zoom-in {
+  transform: scale(1) !important;
+}
+#acierto {
+  text-align: center;
+  min-height: 24px;
+  transform: scale(0);
+}
+.acierto {
+  animation: zoomInOut 2s ease;
+}
+.rojo {
+  color: red;
+}
+.verde {
+  color: green;
+}
+@keyframes zoomInOut {
+  0% { transform: scale(0); }
+  50% { transform: scale(1); }
+  70% { transform: scale(1); }
+  100% { transform: scale(0); }
+}
+h2.palabra {
+  margin: 0 auto 25px auto;
+  text-align: center;
+  color: #F7200B;
+  text-transform: uppercase;/*Es una palabra clave que fuerza a todos los caracteres a ser convertidos a mayúsculas.*/
+  letter-spacing: 6px;
+}
+.flex-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  }
+  .flex-row .abecedareo{
+    width: 80%;
+    justify-content: center;
+  }
+.no-wrap {
+  flex-wrap: nowrap !important;
+}
+.col {
+  width: 50%;
+  text-align: center;
+}
+.col span {
+  
+}
+#turnos h3 {
+  margin: auto;
+}
+h3 span {
+   color: orangered;
+}
+.letra{
+  color: #fff;
+  background-color: #1E47AC;
+}
+.letra:disabled {
+  background-color: #F7200B;
+}
+picture {
+  position: relative;
+}
+picture img {
+  position: absolute;
+  top: -203px;
+  left: -205px;
+  height: 225px;
+}
+#image5, #image4, #image3,
+#image2, #image1, #image0 {
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.fade-in {
+  opacity: 1 !important;
+}
+.encuadre {
+  padding: 3px 2px 2px 6px;
+  border-width:5px ;  
+  border-style:dotted solid double dashed;
+}
+#pista{
+   background-color: #F1C40F; 
+   border: none; border-radius: 3px;
+    color: white; 
+    padding: 12px 22px; 
+    font-size: 14px; 
+    min-width: 18%;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#pista:hover{
+  background-color: #F9E79F;
+}
+#reset{
+  background-color: #E74C3C; 
+   border: none; border-radius: 3px;
+    color: white; 
+    padding: 12px 22px; 
+    font-size: 14px; 
+    min-width: 18%;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#reset:hover{
+  background-color: #F1948A;
+}
